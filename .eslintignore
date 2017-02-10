@@ -5,3 +5,4 @@ static-vendor/*
 src/app/core/analytics.js
 ../Backend/config/statsd.js
 src/assets/*
+src/vendor.js
