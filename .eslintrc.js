@@ -1,5 +1,5 @@
-module.exports ={
-    "extends": "airbnb-base",
+module.exports = {
+    "extends": "airbnb",
     "parser": "babel-eslint",
     "rules": {
         "block-spacing": 0,
@@ -18,24 +18,29 @@ module.exports ={
         "padded-blocks": 0,
         "wrap-iife": 0,
         "arrow-parens": 0,
+        "import/no-extraneous-dependencies": 0,
 
         "arrow-body-style": 1,
         "camelcase": 1,
         "max-len": 1,
         "no-param-reassign": 1,
         "no-restricted-syntax": 1,
-        "no-unused-vars": 1,
         "no-useless-escape": 1,
         "no-var": 1,
         "prefer-arrow-callback": 1,
         "prefer-template": 1,
         "quote-props": 1,
+        "jsx-quotes": ["error", "prefer-single"],
         "radix": 1,
-        "semi": 1,
         "strict": 1,
         "vars-on-top": 1,
+        "react/prop-types": 0,
+        "react/jsx-filename-extension": 0,
+        "import/no-unresolved": 0,
+        "import/extensions": 0,
+        "react/no-array-index-key": 0,
 
-        "indent": [2, 4],
+        "indent": [2, 2],
         "no-use-before-define": [2, { "functions": false }],
     },
     "globals": {
@@ -56,6 +61,7 @@ module.exports ={
         "global": true,
         "inject": true,
         "it": true,
+        "xit": true,
         "jasmine": true,
         "location": true,
         "moip": true,
@@ -110,5 +116,6 @@ module.exports ={
         "unitOfMeasureServiceMock": true,
         "userServiceMock": true,
         "vendaServiceMock": true,
+        "metricServiceMock": true
     }
 };
